@@ -1,0 +1,16 @@
+.box-model{
+    padding: 100px;
+    background-color: aquamarine;
+    border: solid 5px;
+    border-color: blue;
+    ;
+   
+}
+.box-model1{
+    padding: 100px;
+    background-color: red;
+    border: solid 5px;
+    border-color: blue;
+
+    
+}
