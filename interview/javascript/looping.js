@@ -4,7 +4,7 @@
 //for in
 array = [10,20,30,"abc", true, "hello", [10,20,30]]
 obj = {
-    name: "Barath",
+    name: "aneesh",
     dept:"CSE",
     clg:"Tech",
     skills:["UIUX", "MERN", "DSA"]
