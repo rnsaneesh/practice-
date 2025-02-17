@@ -19,12 +19,12 @@ console.log(array[3]);
 console.log(array);
 // Objects
 // 1st type of object declaration
-object1 = {
+/*object1 = {
     "firstname":"St. Joseph",
     "lastname" :"Instute of Technology",
     "depts":["CSE","IT","AD","ECE"],
     "training": "MERN"
-}
+}*/
 console.log(object1)
 console.log(object1.depts)
 console.log(object1['training'])
@@ -47,7 +47,7 @@ set.add("Hello")
 console.log(set);
 set.add("Hello")
 console.log(set);
-console.log(typeof(set));*/
+console.log(typeof(set));
 
 // Logical operator
 console.log("Logical AND operator");
@@ -79,3 +79,11 @@ console.log(a&b);
 console.log(a^b);
 c = 1
 console.log(~c);
+
+object1 = {
+    "firstname":"St. Joseph",
+    "lastname" :"Instute of Technology",
+    "depts":["CSE","IT","AD","ECE"],
+    "training": "MERN"
+}
+Object.entries  
