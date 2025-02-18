@@ -21,7 +21,7 @@ console.log(asaw());//output hello
         console.log(asaw());*/
 
 
-        
+/*
 likeCode=async()=>{
     return new Promise((likePost)=>{
         setTimeout(()=>{
@@ -55,4 +55,53 @@ async function postCode(){
     console.log(comment)
     console.log(share)
 }
-postCode()
+postCode()*/
+
+likeCode = async () => {
+    return new Promise((_, reject) => {
+        setTimeout(() => {
+            reject("Failed to like the post");
+        }, 3000);
+    });
+};
+
+commentCode = async () => {
+    return new Promise((_, reject) => {
+        setTimeout(() => {
+            reject("Failed to comment on the post");
+        }, 3000);
+    });
+};
+
+shareCode = async () => {
+    return new Promise((_, reject) => {
+        setTimeout(() => {
+            reject("Failed to share the post");
+        }, 3000);
+    });
+};
+
+async function postCode() {
+    var post = new Promise((_, reject) => {
+        setTimeout(() => {
+            reject("Failed to create post");
+        }, 5000);
+    });
+
+    try {
+        var [postResult, like, comment, share] = await Promise.all([
+            post,
+            likeCode(),
+            commentCode(),
+            shareCode()
+        ]);
+        console.log(postResult);
+        console.log(like);
+        console.log(comment);
+        console.log(share);
+    } catch (error) {
+        console.error("Error:", error);
+    }
+}
+
+postCode();
