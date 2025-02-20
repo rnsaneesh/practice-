@@ -12,7 +12,9 @@ const UseEffect = () => {
         type="text"
         value={text}
         onChange={(event) => setText(event.target.value)}
+        
       />
+      <h3>the value is {text}</h3>
     </section>
   );
 };

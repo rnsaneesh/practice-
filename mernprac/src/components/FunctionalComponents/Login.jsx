@@ -1,22 +1,25 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import "../Css/Login.css";
 
 function Login(){
-    var s="";
-    var [string,setstring]=useState(s);
-    function res(){
-        var c=document.getElementById("abc").value;
-        setstring(string+c)
-    }
+    
+    
     return(
         <div>
+            <form action="test.html">
             <h1>Login</h1>
-            <label >enter smthg:</label>
-            <input  id ="abc" type="text" />
-            <button onClick={res}>add</button>
-            <p>the string is :{string}</p>
-            <button onClick={()=> setstring(s)}>reset</button>
+    
+   <label for="name">Username:</label>
+    <input name="name" type="text" placeholder="enter a name" />
 
+    <label for="password">Password:</label>
+    <input type="password" placeholder="enter a password" />
 
+    <button type="submit">Submit</button><br />
+    <label>Create a new Account </label>
+          <Link to="/signup">Signup</Link>
+</form>
         </div>
     );
 }

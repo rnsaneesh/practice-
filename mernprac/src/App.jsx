@@ -6,10 +6,14 @@ import Login from './components/FunctionalComponents/Login'
 import About from './components/FunctionalComponents/About'
 import Navbar from './components/FunctionalComponents/Navbar'
 import Contact from './components/FunctionalComponents/Contact'
-
+import Signup from './components/FunctionalComponents/Signup'
+import UseState from './components/FunctionalComponents/UseState'
+import UseEffectApi from './components/FunctionalComponents/UseEffectApi'
 import UseEffect from './components/FunctionalComponents/UseEffect' 
-//import './App.css'
+import UseRef from './components/FunctionalComponents/UseRef'
+import UseMemo from './components/FunctionalComponents/UseMemo'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
+//import './App.css'
 
 function App() {
   
@@ -24,7 +28,12 @@ function App() {
     <Route path='/about' element={<About />}></Route>
     <Route path='/login' element={<Login />}></Route>
     <Route path="/use-effect" element={<UseEffect />} />
+    <Route path="/use-state" element={<UseState />} />
     <Route path='/contact' element={<Contact />}></Route>
+    <Route path='/signup' element={<Signup />} />
+    <Route path='/use-api' element={<UseEffectApi />}></Route>
+    <Route path='/use-ref' element={<UseRef />} />
+    <Route path='/use-memo' element={<UseMemo />}></Route>
     </Routes>
     </BrowserRouter>
     
