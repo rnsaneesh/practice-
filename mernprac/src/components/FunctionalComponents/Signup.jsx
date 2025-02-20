@@ -6,7 +6,7 @@ function Signup() {
     return (
       <div >
         
-        <form action="/home" >
+        <form  >
         <h2>SignUp</h2>
           <label htmlFor="name">Username:</label>
           <input type="text" id="name" placeholder="enter a name" /><br />
