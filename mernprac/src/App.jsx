@@ -12,7 +12,9 @@ import UseEffectApi from './components/FunctionalComponents/UseEffectApi'
 import UseEffect from './components/FunctionalComponents/UseEffect' 
 import UseRef from './components/FunctionalComponents/UseRef'
 import UseMemo from './components/FunctionalComponents/UseMemo'
+import UseMemoize from './components/FunctionalComponents/UseMemoize'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import HoC from './components/FunctionalComponents/HoC/HoC'
 //import './App.css'
 
 function App() {
@@ -33,7 +35,9 @@ function App() {
     <Route path='/signup' element={<Signup />} />
     <Route path='/use-api' element={<UseEffectApi />}></Route>
     <Route path='/use-ref' element={<UseRef />} />
+    <Route path='/hoc' element={<HoC />} />
     <Route path='/use-memo' element={<UseMemo />}></Route>
+    <Route path='/use-memoize' element={<UseMemoize />}></Route>
     </Routes>
     </BrowserRouter>
     
