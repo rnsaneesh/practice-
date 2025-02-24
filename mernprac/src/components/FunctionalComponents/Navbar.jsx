@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const Navbar = () => {
   var[dropdown,showDropDown]=useState(false);
+  var[dropdown1,showDropDown1]=useState(false);
   return (
     <header>
       <nav>
@@ -21,6 +22,19 @@ const Navbar = () => {
               <li><Link to="/use-ref" className="dropdown-link">useRef</Link></li>
               <li><Link to="/use-memo" className="dropdown-link">Usememo</Link></li>
               <li><Link to="/use-memoize" className="dropdown-link">Usememoize</Link></li>
+            </ul>
+                )}
+            </div>
+            </li>
+
+            <li >
+          <div className="dropdown" onMouseEnter={()=>showDropDown1(!dropdown1)} onMouseLeave={()=>showDropDown1(!dropdown1)}>
+            <span className="link">Memoization </span>
+            { dropdown1 && (
+            <ul className="dropdown-list">
+              <li><Link to="/memo" className="dropdown-link">Memo</Link></li>
+              <li><Link to="/lazy" className="dropdown-link">LazySuspend</Link></li>
+              
             </ul>
                 )}
             </div>

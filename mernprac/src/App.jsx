@@ -15,6 +15,8 @@ import UseMemo from './components/FunctionalComponents/UseMemo'
 import UseMemoize from './components/FunctionalComponents/UseMemoize'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import HoC from './components/FunctionalComponents/HoC/HoC'
+import Memo from "./components/FunctionalComponents/Memoziation/Memo"
+import LazyLoadingAndSuspense from "./components/FunctionalComponents/Memoziation/LazyLoading"
 //import './App.css'
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
     <Route path='/hoc' element={<HoC />} />
     <Route path='/use-memo' element={<UseMemo />}></Route>
     <Route path='/use-memoize' element={<UseMemoize />}></Route>
+    <Route path="/memo" element= {<Memo />} />
+    <Route path="/lazy" element= {<LazyLoadingAndSuspense />} />
     </Routes>
     </BrowserRouter>
     
