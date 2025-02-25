@@ -17,6 +17,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import HoC from './components/FunctionalComponents/HoC/HoC'
 import Memo from "./components/FunctionalComponents/Memoziation/Memo"
 import LazyLoadingAndSuspense from "./components/FunctionalComponents/Memoziation/LazyLoading"
+import CoE from "./components/FunctionalComponents/CoE.jsx";
 //import './App.css'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
     <Route path="/use-effect" element={<UseEffect />} />
     <Route path="/use-state" element={<UseState />} />
     <Route path='/contact' element={<Contact />}></Route>
+    <Route path="/res" element={<CoE />} />
     <Route path='/signup' element={<Signup />} />
     <Route path='/use-api' element={<UseEffectApi />}></Route>
     <Route path='/use-ref' element={<UseRef />} />

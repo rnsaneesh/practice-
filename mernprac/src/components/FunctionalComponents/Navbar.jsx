@@ -41,6 +41,11 @@ const Navbar = () => {
             </li>
         
             <li><Link to="/hoc" className="link">HoC</Link></li>
+            <li>
+          <Link to="/res" className="link">
+            ContextAPI
+          </Link>
+        </li>
           <li><Link to="/contact" className="link">Contact</Link></li>
           <li><Link to="/login" className="link">Login</Link></li>
           <li><Link to="/signup" className="link">Signup</Link></li>
