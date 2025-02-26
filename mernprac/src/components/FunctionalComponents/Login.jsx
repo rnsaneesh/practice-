@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../Css/Login.css";
 
 function Login(){
+    var [email,setEmail]=useState("");
+    var[password,setPassword]=useState("");
     
     
     return(
