@@ -12,7 +12,7 @@ const cors = require('cors');
 
 // Allow requests from your Vercel domain
 const corsOptions = {
-  origin: 'https://practice-123-d8t09gsnw-rnsaneeshs-projects.vercel.app/', 
+  origin: 'https://practice-123-16nikfp6u-rnsaneeshs-projects.vercel.app/', 
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 };
