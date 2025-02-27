@@ -8,7 +8,18 @@ const app = express();
 app.use(express.json());
 const PORT = 3001;
 dotenv.config();
- app.use(cors())
+const cors = require('cors');
+
+// Allow requests from your Vercel domain
+const corsOptions = {
+  origin: 'https://practice-123-d8t09gsnw-rnsaneeshs-projects.vercel.app/', 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
+
+
 
 
 // console.log(process.env.MONGODB_URL);
